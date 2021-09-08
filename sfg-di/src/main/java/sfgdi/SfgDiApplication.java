@@ -2,7 +2,7 @@ package sfgdi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-<<<<<<< HEAD
+
 import org.springframework.context.ApplicationContext;
 
 import sfgdi.controllers.ConstructorInjectedController;
@@ -10,14 +10,13 @@ import sfgdi.controllers.I18nController;
 import sfgdi.controllers.MyController;
 import sfgdi.controllers.PropertyInjectedController;
 import sfgdi.controllers.SetterInjectedController;
-=======
->>>>>>> master
+
 
 @SpringBootApplication
 public class SfgDiApplication {
 
 	public static void main(String[] args) {
-<<<<<<< HEAD
+
 		ApplicationContext ctx = SpringApplication.run(SfgDiApplication.class, args);
 		
 		System.out.println("--------GREETING INTERNATIONALIZATION : ");
@@ -39,9 +38,8 @@ public class SfgDiApplication {
 		System.out.println("---------BY CONSTRUCTOR : ");
 		ConstructorInjectedController constructorInjectedController = (ConstructorInjectedController) ctx.getBean("constructorInjectedController");
 		System.out.println(constructorInjectedController.getGreeting());
-=======
-		SpringApplication.run(SfgDiApplication.class, args);
->>>>>>> master
+		
+
 	}
 
 }
