@@ -8,6 +8,7 @@ import org.springframework.context.ApplicationContext;
 import sfgdi.controllers.ConstructorInjectedController;
 import sfgdi.controllers.I18nController;
 import sfgdi.controllers.MyController;
+import sfgdi.controllers.PetController;
 import sfgdi.controllers.PropertyInjectedController;
 import sfgdi.controllers.SetterInjectedController;
 
@@ -18,6 +19,10 @@ public class SfgDiApplication {
 	public static void main(String[] args) {
 
 		ApplicationContext ctx = SpringApplication.run(SfgDiApplication.class, args);
+		
+		System.out.println("--- THE BEST PET IS ---");
+		PetController petController = (PetController) ctx.getBean("petController");
+		System.out.println(petController.whichPetIsTheBest());
 		
 		System.out.println("--------GREETING INTERNATIONALIZATION : ");
 		I18nController i18nController = (I18nController) ctx.getBean("i18nController");
