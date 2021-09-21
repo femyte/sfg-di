@@ -1,4 +1,4 @@
-package sfgdi.services;
+package org.fortress.di;
 
 public interface PetService {
 	

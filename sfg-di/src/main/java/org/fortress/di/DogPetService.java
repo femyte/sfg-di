@@ -1,20 +1,20 @@
-package sfgdi.services;
+package org.fortress.di;
 
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
-@Profile("cat")
+@Profile({"dog" , "default"})
 @Service("serviceDogCat")
-public class CatPetService implements PetService {
+public class DogPetService implements PetService {
 
-	public CatPetService() {
+	public DogPetService() {
 		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public String getPetType() {
 		// TODO Auto-generated method stub
-		return "Cat are the Best";
+		return "Dogs are the Best";
 	}
 
 }

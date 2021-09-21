@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
 import sfgdi.controllers.ConstructorInjectedController;
 import sfgdi.controllers.I18nController;
@@ -12,7 +13,7 @@ import sfgdi.controllers.PetController;
 import sfgdi.controllers.PropertyInjectedController;
 import sfgdi.controllers.SetterInjectedController;
 
-
+@ComponentScan(basePackages = {"sfgdi", "org.fortress.di"})
 @SpringBootApplication
 public class SfgDiApplication {
 

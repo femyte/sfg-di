@@ -1,9 +1,8 @@
 package sfgdi.controllers;
 
+import org.fortress.di.PetService;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
-
-import sfgdi.services.PetService;
 
 @Controller
 public class PetController {
