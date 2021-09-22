@@ -1,15 +1,20 @@
 package sfgdi.services;
 
-public class I18nEnglishGreetingService implements GreetingService  {
+import sfgdi.repositories.EnglishGreetingRepository;
 
-	public I18nEnglishGreetingService() {
+public class I18nEnglishGreetingService implements GreetingService  {
+	
+	private final EnglishGreetingRepository englishGreetingRepository;
+
+	public I18nEnglishGreetingService(EnglishGreetingRepository englishGreetingRepository) {
+		this.englishGreetingRepository = englishGreetingRepository;
 		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public String sayGreeting() {
 		// TODO Auto-generated method stub
-		return "Hello World - EN";
+		return englishGreetingRepository.getGreeting();
 	}
 
 }
