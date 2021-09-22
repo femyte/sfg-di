@@ -14,7 +14,7 @@ public class CatPetService implements PetService {
 	@Override
 	public String getPetType() {
 		// TODO Auto-generated method stub
-		return "Cat are the Best";
+		return "Cats are the Best";
 	}
 
 }

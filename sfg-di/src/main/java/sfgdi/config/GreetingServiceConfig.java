@@ -1,5 +1,6 @@
 package sfgdi.config;
 
+import org.fortress.di.PetServiceFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
@@ -15,6 +16,11 @@ import sfgdi.services.SetterInjectedGreetingService;
 
 @Configuration
 public class GreetingServiceConfig {
+	
+	@Bean
+	PetServiceFactory petServiceFactory() {
+		return new PetServiceFactory();
+	}
 	
 	@Bean
 	EnglishGreetingRepositoryImpl englishGreetingRepositoryImpl() {
