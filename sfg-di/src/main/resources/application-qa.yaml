@@ -1,0 +1,4 @@
+sfgdi:
+  username:  YamlQAUser
+  password:  YamlQAPassword
+  jdbcUrl:   YamlQAUrl

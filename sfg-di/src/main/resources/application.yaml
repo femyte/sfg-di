@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active: 
+      - cat
+      - EN
+      - dev
+      
+    
+
+sfgdi:
+  username:  YamlUser
+  password:  YamlPassword
+  jdbcUrl:   YamlUrl
+  
+---
+spring:
+  profiles:  prod
+  
+sfgdi:
+  username: YamlProdUser
+  password: YamlProdPassword
+  jdbcUrl:  YamlProdUrl

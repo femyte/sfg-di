@@ -1,0 +1,4 @@
+sfgdi:
+  username: YamlDevUser
+  password: YamlDevPassword
+  jdbcUrl:  YamlDevUrl
